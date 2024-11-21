@@ -7,7 +7,7 @@ app = Flask(__name__)
 CORS(app)  # This enables CORS for all routes
 
 # Load the Excel data
-data = pd.read_excel("./BACKEND/VOTE.xlsx")
+data = pd.read_excel("VOTE.xlsx")
 
 @app.route("/get-data", methods=["POST"])
 def get_data():
